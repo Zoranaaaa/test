@@ -1,0 +1,231 @@
+body {
+  background-position: center;
+  background-image: url("slike/pozadina.jpg");
+  background-color: black;
+  margin: 0px auto;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width: 150px;
+  animation: logoanimacija 1s infinite;
+}
+
+@keyframes logoanimacija {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+nav {
+  text-align: center;
+  
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0px 20px;
+  padding: 10px 0px;
+  display: inline-block;
+}
+
+nav ul li a { /* navigacija - tekst*/
+  padding: 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  transition: 0.2s;
+ color: black;
+}
+
+nav ul li a:hover { /* stajl koji se primenjuje kad predjes misem preko teksta navigacije*/
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 4px;
+  color: black;
+}
+
+nav ul li a:any-link { /* Da ne bi bio podvucen tekst u navigaciji. U sustini svaki link da ne bude podvucen*/
+  text-decoration: none;
+}
+
+h1 {
+    color: rgb(51, 51, 51) ;
+}
+
+.akcija {
+  background-image: url("slike/grcka.jpg");
+  background-size: cover;
+  display: inline-block;
+  margin: 10px 20px;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  opacity: 0.85;
+  cursor: pointer; /* Menja miš u iz strelice u pokazivača kad pređeš preko tog elementa*/
+  transition: ease-in 0.1s;
+  letter-spacing: 5px;
+}
+
+.akcija:hover {
+  transform: scale(1.02); /* povećava element za 0.2% - ovo ti je ono kad pređeš mišem na početnoj strani preko elementa pa ti uveća sliku*/
+  transition: ease-in 0.1s;
+  opacity: 1;
+}
+
+.akcija2 {
+  background-image: url("slike/italija.jpg");
+   background-size: cover;
+  display: inline-block;
+  margin: 10px 20px;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: ease-in 0.1s;
+  letter-spacing: 5px;
+}
+
+.akcija2:hover {
+  transform: scale(1.02);
+  transition: ease-in 0.1s;
+  opacity: 1;
+}
+
+.akcija3 {
+  background-image: url("slike/spanija.jpg");
+    background-size: cover;
+  display: inline-block;
+  background-position: 0px -70px;
+  margin: 10px 20px;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: ease-in 0.1s;
+  letter-spacing: 5px;
+}
+
+.akcija3:hover {
+  transform: scale(1.02);
+  transition: ease-in 0.1s;
+  opacity: 1;
+}
+
+.galerija {
+  margin: 75px 0px 0px 0px;
+  padding: 0;
+  text-align: center;
+}
+
+.galerija img {
+  margin: 10px 10px;
+  opacity: 0.9;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 300px;
+}
+
+.galerija img:hover {
+  opacity: 1;
+}
+
+fieldset {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 20px 10px;
+  width: 400px;
+  margin: 150px auto 0px auto;
+  border-radius: 20px;
+
+}
+
+input, select {
+  display: block;
+ 
+   margin:auto;
+    margin: 20px auto;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+
+
+}
+
+select {
+    width: 200px;
+}
+
+
+
+input[type="text"] {
+  margin: 15px auto;
+}
+
+input[type="radio"] {
+  display: inline;
+  margin: 20px 10px;
+}
+
+input[type="button"] {
+  width: 400px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 2px solid whitesmoke;
+}
+
+input[type="button"]:hover {
+  background-color: rgba(238, 130, 238, 0.7);
+  color: black;
+  transition: 0.2s;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+h4 {
+  display: inline;
+  margin: 10px auto;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1150px) { /* media upit, za ekran manji od 1150px neće prikazivati logo*/
+  .logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    display: none; /* za ekran manji od 768px ne prikazuje logo, ovo je mobilna vezija sajta*/
+  }
+
+  nav ul li {
+    display: block;
+  }}
